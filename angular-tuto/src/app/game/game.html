@@ -1,0 +1,6 @@
+<h3>Favorite Games of {{username}}</h3>
+<ul>
+    @for (game of games; track game.id) {
+        <li (click)="favGame(game.title)">{{ game.title }}</li>
+    }
+</ul>
